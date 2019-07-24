@@ -8,9 +8,10 @@ File is divided in three parts
 3) Plus one model.png file which shows the structure of the model.
 
 How to use Model_training
-1) In future if you want to change the model structure than this file can be used to generate new models.
-2) After running this file it will make new models and tokenizer in the same folder.
-3) After this you need to copy these models and tokenizer in Data prediction.
+1) You need to first creat model and tokenizer to run data prediction file.
+2) To do that first download stanford glove vector file and copy glove.6B.300d.txt it in Model_training.
+3) After this when you will run my_model.py model and tokenizer will be created. You need to copy these models and tokenizer in Data prediction.
+4) Do not forgrt to rename these to my_model_9.h5, mymodel_tok.
 
 How to use Data prediction
 
@@ -27,7 +28,7 @@ Dependencies
 1) requirements.txt can be usd to solve all dependency problems.
 2) You also need to download wordnet and stopwords. Which can be done by command:-
   python -m nltk.downloader
-  This will open nltk window no you have to type d wordnet stopwords
+  This will open nltk window no you have to type < d wordnet stopwords >
 
 Why I chose this model
 1) Test accuracy given by this model after 9 epochs is 84.6%. Which is very good.
@@ -47,3 +48,5 @@ Reference materials
 2) Andrew Ng course can also be used at coursera :-https://www.coursera.org/learn/nlp-sequence-models/home/welcome. You have to audit this course in order to learn it.
 3) To download quora question pairs click on:- http://qim.fs.quoracdn.net/quora_duplicate_questions.tsv
 4) To download word vector click on:- http://nlp.stanford.edu/data/glove.6B.zip 
+
+If you face any problem regarding this file feel free to ask.
